@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <link href="css/style.css" rel="stylesheet">
+    <title>safezone</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="text-center header" ><img src="images/logo.png" alt="logo" width="200px"></div>
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class=" fs-3 bi-shield-fill shield"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+              <div class=" text-center navbar-collapse" id="navbarNavDropdown">
+                <li class="nav-item">
+                    <a class="nav-link"  href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="diensten.html">DIENSTEN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRIJZEN & ABONNEMENTEN</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
+                <button class="btn shield" style="background-color: aliceblue;" type="submit"><i class=" fs-5 bi bi-search"></i></button>
+                <button class="mx-4 btn shield"  style="background-color: aliceblue;"type="button"><i class="fs-5 bi bi-person-circle"></i></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+ </header>
+
+ <main>
+    <article class="pt-5 col-11 text-xs-center mx-5 ">
+    <div class="text-center">
+        <h1 class="lettertype1 text-uppercase">stay safe, stay in contact </h1>
+        <h2 class="fs-5 fw-semibold text-decoration-underline">CONTACTFORMULIER:</h2>
+        <p>Heb je een probleem of een specifieke vraag? Vul dan onderstaand contactformulier in en we nemen zo snel mogelijk contact met je op om je te ondersteunen. Vul zeker de velden met een <span class="shield">*</span></p>
+        
+    </div>
+    <hr class="col-12 mx-">
+    </article>
+        <form class="mx-5" action="#" method="get">
+            <!---fieldset1---------------------------------------------->
+            <fieldset class="row g-3 mb-3">
+                <legend class="mt-1 pt-3 fs-5 fw-medium text-uppercase">Persoonlijke gegevens</legend>
+                <div class="form-floating col-12 col-md-6 ">
+                    <input type="text" class="form-control" id="fname" placeholder="">
+                    <label for="fname">Voornaam<span class="shield">*</span></label>
+                  </div>
+                  <div class="form-floating col-12 col-md-6 ">
+                    <input type="text" class="form-control" id="flname" placeholder="">
+                    <label for="flname">Achternaam<span class="shield">*</span></label>
+                  </div>
+               
+                <div class="form-floating col-12 col-md-6">
+                    <input id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" placeholder="">
+                    <label for="phone">
+                        Telefoonnummer <span class="shield">*</span>
+                    </label>
+                </div>
+
+                <div class="form-floating col-12 col-md-6">
+                    <input id="fmail" name="fmail" type="email" class="form-control" placeholder="name@outlook.com">
+                    <label for="fmail">
+                        E-mail<span class="shield">*</span>
+                    </label>
+                </div>
+            </fieldset>
+            <!---fieldset2------------------------------->
+            <fieldset class="row g-3 mb-3">
+                <legend class="mt-1 pt-3 fs-5 fw-medium text-uppercase col-12">Categorie</legend>
+                <p class="fst-italic">Duidt aan met welke dienst je problemen of vragen hebt:<span class="shield">*</span></p>
+                <div class=" pb-2 form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Realtime accountbewaking
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Slim advies voor beveiliging
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                    <label class="form-check-label" for="exampleRadios3">
+                      Veilige VPN-opties
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                    <label class="form-check-label" for="exampleRadios3">
+                      Virusscans en Hackerstests
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                    <label class="form-check-label" for="exampleRadios3">
+                      Simulatie van hackpogingen
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                    <label class="form-check-label" for="exampleRadios3">
+                      Platformveiligheidsgegevens
+                    </label>
+                  </div>
+            </fieldset>
+            <!---------fieldset3------------------------------------------------------->
+            <fieldset>
+                <legend class="mt-1 pt-3 fs-5 fw-medium text-uppercase">bericht</legend>
+                <div class="col-12 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Onderwerp</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Typ hier je onderwerp...">
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Bericht<span class="shield">*</span></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Typ hier je bericht..."></textarea>
+                  </div>
+            </fieldset>
+        
+            <div class="text-end">
+                <button class="col-12 col-md-4 col-lg-2 btn light" style="background-color: #d0a33b" type="submit">Verstuur</button>
+              </div>
+        </form>
+    
+
+</div>
+ </main>
+ <hr class="col-11 mx-5">
+ <footer>
+    <div class="col  mx-5 ">
+    <h2 class="text-uppercase  fs-4 fw-bolder pt-4">contact</h2>
+    <p>
+      <i class="bi bi-mailbox"></i> <a class="shield "href="mailto:safezone@outlook.be">safezone@outlook.be</a><br>
+      <i class="bi bi-telephone"></i> <a class="shield" href="tel: +32 399 / 88 77 66">+32 399 / 88 77 66</a></p>
+    <ul class="mx-1 list-inline socials">
+      <li class="list-inline-item">
+        <a class="shield" href="https://www.youtube.com" target="_blank">
+          <i class="bi bi-youtube fs-3"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="shield" href="https://www.instagram.com" target="_blank">
+          <i class="bi bi-instagram fs-3"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="shield" href="https://www.facebook.com" target="_blank">
+          <i class="bi bi-facebook fs-3"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="shield" href="https://twitter.com/" target="_blank">
+          <i class="bi bi-twitter-x fs-3 "></i>
+        </a>
+      </li>
+    </ul>
+    </div>
+    <p class="text-center">&copy; SAFEZONE CORP.</p>
+  </footer>
+ </body>
+</html>
