@@ -1,0 +1,91 @@
+<div class="row justify-content-between">
+<!------Carousel------>
+      <div class="col-xl-9 col-md-12">
+      <div id="carouselExampleCaptions" class="align-self-start carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <figure>
+            <img src="images/logoslogan.png" class="d-block w-100" alt="sfeerbeeld1" style="height: 600px">
+            </figure>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <figure>
+            <img src="images/animeimage2.jpg" class="d-block w-100" alt="sfeerbeeld2" style="height: 600px">
+            </figure>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <figure>
+            <img src="images/animeimage.jpg" class="d-block w-100" alt="sfeerbeeld3" style="height: 600px">
+            </figure>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <figure>
+            <img src="images/animeimage3.jpg" class="d-block w-100" alt="sfeerbeeld4" style="height: 600px">
+            </figure>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      <!----Section1-->
+    
+    
+      
+    
+    <!--carousel+section1-->
+    <!----section2-->
+    <div class="row">
+      <section id="overmij" class="container-fluid pe-2 my-4">
+        <h2 class="text-uppercase fs-4 pt-3 veiligblauw">Over mij</h2>
+        <p class=" ">Als student systeem- en netwerkbeheer ben ik gepassioneerd door technologie, maar ook bezorgd over de toenemende cyberdreigingen. Daarom heb ik Safezone ontwikkeld. Dit beveiligingssysteem biedt geavanceerde bescherming tegen online bedreigingen en is gebruiksvriendelijk voor individuen en bedrijven.  <span class="shield fw-bold">Mijn moto:</span> iedereen verdient een veilige online ervaring. Met Safezone wil ik niet alleen dreigingen detecteren, maar ze ook voorkomen door proactieve maatregelen te integreren. Voor mij is Safezone meer dan een project; het is mijn missie om technologie veiliger te maken voor iedereen.</p>
+      </section>
+      <article class="my-4">
+          <figure class="">
+          <img src="images/me.jpg" class="rounded mx-auto d-block" alt="aboutme" width="300">
+        </figure>
+      </article>
+    </div>
+    
+    <!------>
+      <div class="themed-container veiligblauw ">
+        <div class="row">
+        <div class="lettertype2 col pt-3 text-center"><p class="fs-2">5M+ leden <br> </p></div>
+        <div class="col pt-3 text-center"><p class="fs-2">4,8/5 <i class="bi bi-star-fill" width="60px"></i></p></div>
+        <div class="col pt-3 text-center "><p class="fs-2">900+ downloads</p></div>
+        </div>
+      </div>
+      </main>
+
+      
+    <!-------->
+ 
+</div>
