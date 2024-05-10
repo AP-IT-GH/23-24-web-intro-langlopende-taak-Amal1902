@@ -89,3 +89,101 @@
     <!-------->
  
 </div>
+
+
+
+
+
+
+
+<!----------------------------DIENSTEN PAGINA---------------------------------------------------------->
+<div class="container">
+  <div class="row"> 
+<main>
+   <section class="mx-5 mt-3 py-3">
+       <h1 class=" veiligblauw text-uppercase fs-2">Onze diensten</h1>
+       <p>Welkom op onze dienstenpagina van Safezone!<br>Hier vind je meer informatie over de verschillende services die we aanbieden om jouw digitale veiligheid te waarborgen.</p>
+   </section>
+   <hr>
+   <!----RIJ1-->
+   <div class="row g-1">
+
+       <article class=" col-12 col-sm-6 col-md-4">
+           <figure>
+               <img src="images/adem-ay.jpg" class="rounded mx-auto d-block img-fluid" alt="adem-ay">
+               <figcaption class="h6 small mt-2">© Adem Ay</figcaption>
+           </figure>
+           <h2 class="mx-5 fw-bold fs-6">Realtime Accountbewaking</h2>
+           <p class="mx-5">Met Safezone kun je al je online accounts eenvoudig verbinden en krijg je real-time meldingen over verdachte inlogpogingen, inclusief gedetailleerde informatie, zodat je altijd op de hoogte bent en je accounts veilig blijven.</p>
+           <div class="container text-center pb-3 ">
+               <button class=" text-center  col-5  btn gouden-button" type="button" href="realtime-accountbewaking.html"><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="realtime-accountbewaking.html">Meer info</a></button>
+                </div>
+       </article>
+
+       <article class="col-12 col-sm-6 col-md-4">
+           <figure>
+               <img src="images/sven-mieke.jpg" class="rounded mx-auto d-block img-fluid" alt="sven-mieke">
+               <figcaption class="h6 small mt-2">© Sven Mieke</figcaption>
+           </figure>
+           <h2 class="mx-5 fw-bold fs-6">Slim Advies voor Beveiliging</h2>
+           <p class="mx-5">Bescherm je accounts proactief met Safezone's expertise en advies. Ontdek hoe je sterke wachtwoorden genereert, tweefactorauthenticatie instelt en meer voor maximale beveiliging.</p>
+           <div class="container text-center pb-3 ">
+               <button class=" text-center  col-5  btn gouden-button" type="button" href="#">Meer info</button>
+                </div>
+       </article>
+
+       <article class="col-12 col-sm-6 col-md-4">
+           <figure>
+               <img src="images/privecstasy.jpg" class="rounded mx-auto d-block img-fluid" alt="privecstasy">
+               <figcaption class="h6 small mt-2">© privecstasy</figcaption>
+           </figure>
+           <h2 class="mx-5 fw-bold fs-6">Veilige VPN-opties</h2>
+           <p class="mx-5">Safezone biedt een veilige VPN voor maximale online privacy. Surf veilig en anoniem, waar je ook bent, en bescherm jezelf tegen nieuwsgierige blikken en aanvallen.</p>
+           <div class="container text-center pb-3 ">
+               <button class=" text-center  col-5 mt-3 btn gouden-button" type="button" href="#">Meer info</button>
+                </div>
+       </article>
+   </div>
+<!----RIJ1----->
+<!-------RIJ2-->
+   <div class="row g-1">
+
+       <article class="col-12  col-md-4 ">
+           <figure>
+               <img src="images/Thomas.jpg" class="rounded mx-auto d-block img-fluid" alt="Thomas" style="width: 100%;">
+               <figcaption class="h6 small mt-2">© Thomas</figcaption>
+           </figure>
+           <h2 class="mx-5 fw-bold fs-6">Virusscans en Hackerstests</h2>
+           <p class="mx-5">Laat je accounts scannen op virussen en hackers, verwijder schadelijke software en detecteer kwetsbaarheden om je te beschermen tegen gevaren.</p> 
+           <div class="container text-center ">
+               <button class=" text-center  col-5  btn gouden-button" type="button" href="#">Meer info</button>
+                </div>
+       </article>
+
+       <article class="col-12 col-md-4 ">
+           <figure>
+               <img src="images/Gerd-Altman.jpg" class="rounded mx-auto d-block img-fluid" alt="Gerd-Altman">
+               <figcaption class="h6 small mt-2">© Gerd Altman</figcaption>
+           </figure>
+           <h2 class="mx-5 fw-bold fs-6">Simulatie van Hackpogingen</h2>
+           <p class="mx-5">Identificeer zwakke plekken in je beveiliging met Safezone's hackpogingen-simulaties. Neem gerichte maatregelen om je accounts te beschermen tegen aanvallen.</p>
+           <div class="container text-center ">
+               <button class=" text-center  col-5  btn gouden-button" type="button" href="#">Meer info</button>
+                </div>
+       </article>
+
+       <article class="col-12 col-md-4 ">
+           <figure>
+               <img src="images/joffi.jpg" class="rounded mx-auto d-block img-fluid" alt="joffi" style="width: 90%;">
+               <figcaption class="h6 small ms-3 mt-2">© joffi</figcaption>
+           </figure>
+           <h2 class="mx-5 fw-bold fs-6">Platformveiligheidsgegevens</h2>
+           <p class="mx-5">Met Safezone krijg je inzicht in de veiligheid van online platforms, zodat je weloverwogen beslissingen kunt nemen. Bescherm jezelf vandaag nog voor een veiligere online ervaring.</p>
+          <div class="container text-center">
+          <button class="   col-5  btn gouden-button" type="button" href="#">Meer info</button>
+           </div>
+       </article>
+   </div>
+   </div>
+   <!--------RIJ2-->
+</main>
