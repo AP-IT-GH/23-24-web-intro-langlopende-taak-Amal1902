@@ -44,4 +44,14 @@ background-color: aliceblue
 .gouden-button{
   background-color: #d0a33b
 }
+.help-container {
+  padding: .75rem;
+  margin-bottom: 1.5rem;
+  background-color: rgb(199, 208, 212);
+  border: 1px solid rgb(228, 242, 246);
+  color: white;
+}
+.scrollbar {
+  overflow-x: auto;
+}
 
