@@ -14,39 +14,51 @@
 </head>
 
 <body>
-    <header>
-      <div class="text-center header" ><img src="./assets/logo.png" alt="logo" width="200px"></div>
-        <nav class="navbar navbar-expand-lg navblauw">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class=" fs-3 bi-shield-fill shield"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul class="navbar-nav me-auto my-2 my-lg-0 ">
-              <div class=" text-center navbar-collapse" id="navbarNavDropdown">
-                <li class="nav-item">
-                    <a class="nav-link"  href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="diensten.html">DIENSTEN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PRIJZEN & ABONNEMENTEN</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
+  <header>
+    <div class="text-center"><img src="./assets/logo.png" alt="logo" width="200px"></div>
+    <nav class="navbar navbar-expand-lg navblauw">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class=" fs-3 bi-shield-fill shield"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+          <div class=" text-center navbar-collapse" id="navbarNavDropdown">
+            <li class="nav-item">
+                <a class="nav-link"  href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle"aria-current="page"  href="diensten.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DIENSTEN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="diensten.html">Overzicht</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="realtime-accountbewaking.html">Realtime accountbewaking</a></li>
+                <li><a class="dropdown-item" href="slim-advies-voor-beveiliging.html">Slim advies voor beveiliging</a></li>
+                <li><a class="dropdown-item" href="veilige-vpn-opties.html">Veilige VPN-opties</a></li>
+                <li><a class="dropdown-item" href="virusscans-en-hackertests.html">Virusscans en hackertests</a></li>
+                <li><a class="dropdown-item" href="simualtie-van-hackpogingen.html">Simulatie van hackpogingen</a></li>
+                <li><a class="dropdown-item" href="platformveiligheidsgegevens.html">Platformveiligheidsgegevens</a></li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
-                <button class="btn shield licht-button-blauw" type="button"><i class=" fs-5 bi bi-search"></i></button>
-                <button class="mx-4 btn shield licht-button-blauw"type="button"><i class="fs-5 bi bi-person-circle"></i></button>
-              </form>
-            </div>
-          </div>
-        </nav>
- </header>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRIJZEN & ABONNEMENTEN</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Zoeken..." aria-label="Search">
+            <button class="btn shield licht-button-blauw" type="submit"><i class=" fs-5 bi bi-search"></i></button>
+            <button class="mx-4 btn shield licht-button-blauw"type="button"><i class="fs-5 bi bi-person-circle"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>
  <div class="container">
     <div class="mt-4 row"> 
   <main class="border-bottom mb-2 col-md-9">

@@ -11,14 +11,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <link href="css/style.css" rel="stylesheet">
 
+    
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="./css/mapstyle.css">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="./js/mapscript.js" defer></script>
+
     <script src="./js/recaptcha.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>safezone</title>
 </head>
 
 <body>
-    <header class="">
-        <div class="text-center header" ><img src="./assets/logo.png" alt="logo" width="200px"></div>
+    <header>
+        <div class="text-center container-fluid"><img src="./assets/logo.png" alt="logo" width="200px"></div>
         <nav class="navbar navbar-expand-lg navblauw">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class=" fs-3 bi-shield-fill shield"></i></a>
@@ -31,8 +43,20 @@
                 <li class="nav-item">
                     <a class="nav-link"  href="index.html">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="diensten.html">DIENSTEN</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DIENSTEN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="diensten.html">Overzicht</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="realtime-accountbewaking.html">Realtime accountbewaking</a></li>
+                    <li><a class="dropdown-item" href="slim-advies-voor-beveiliging.html">Slim advies voor beveiliging</a></li>
+                    <li><a class="dropdown-item" href="veilige-vpn-opties.html">Veilige VPN-opties</a></li>
+                    <li><a class="dropdown-item" href="virusscans-en-hackertests.html">Virusscans en hackertests</a></li>
+                    <li><a class="dropdown-item" href="simualtie-van-hackpogingen.html">Simulatie van hackpogingen</a></li>
+                    <li><a class="dropdown-item" href="platformveiligheidsgegevens.html">Platformveiligheidsgegevens</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">PRIJZEN & ABONNEMENTEN</a>
@@ -51,17 +75,15 @@
         </nav>
  </header>
 
- <main>
-    <article class="pt-5 col-11 text-xs-center mx-5 ">
-    <div class="text-center">
+ <div class="container">
+  <div class="row">
+ <main class="col-md-9">
+    <article class="border-bottom mb-2 pt-5 col-11 text-center">
         <h1 class="veiligblauw text-uppercase">stay safe, stay in contact </h1>
         <h2 class="fs-5 fw-semibold text-decoration-underline">CONTACTFORMULIER:</h2>
         <p>Heb je een probleem of een specifieke vraag? Vul dan onderstaand contactformulier in en we nemen zo snel mogelijk contact met je op om je te ondersteunen. Vul zeker de velden met een <span class="shield">*</span></p>
-        
-    </div>
-    <hr class="col-12 mx-">
     </article>
-        <form class="mx-5" action="#" method="get">
+        <form class= action="#" method="get">
             <!---fieldset1---------------------------------------------->
             <fieldset class="row g-3 mb-3">
                 <legend class="mt-1 pt-3 fs-5 fw-medium text-uppercase">Persoonlijke gegevens</legend>
@@ -141,22 +163,36 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Typ hier je bericht..."></textarea>
                   </div>
             </fieldset>
-            <div class="text-end">
+            <div class="row">
             <div class="g-recaptcha" data-sitekey="6Le2ZdgpAAAAAM8cQ5l7x9Yr5HUJynYqeON2awSv" data-callback="initRecaptcha"></div>
+            <div class="mt-2 text-end">
+                <button class="col-12 col-md-3 btn light gouden-button"  type="submit">Verstuur</button>
+                
             </div>
-            <div class="text-end">
-                <button class="col-12 col-md-4 col-lg-2 btn light gouden-button"  type="submit">Verstuur</button>
-              </div>
+          </div>
+
+            
         </form>
-</div>
-
-
-
+        <section id="map" class="mt-4 row">
+          <div id="apMap" class="col-12 mb-3"></div>
+        </section>
 
  </main>
- <hr class="col-11 mx-5">
- <footer>
-    <div class="col  mx-5 ">
+
+ <aside class="border-start d-none d-md-block mt-5 col-12 col-md-3">
+<ul>
+  <ul class="mt-5">
+    <li><a class="shield" href="#">Tips & Tricks</a></li>
+    <li><a class="shield" href="#">Community</a></li>
+    <li><a class="shield" target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
+    <li><a class="shield" href="#">Meer over ons</a></li>
+    <li><a class="shield" href="#">FAQ</a></li>
+  </ul>
+  
+</ul>
+ </aside>
+ <footer class="border-top">
+    <div class="col-12">
     <h2 class="text-uppercase  fs-4 fw-bolder pt-4">contact</h2>
     <p>
       <i class="bi bi-mailbox"></i> <a class="shield "href="mailto:safezone@outlook.be">safezone@outlook.be</a><br>
@@ -186,5 +222,7 @@
     </div>
     <p class="text-center">&copy; SAFEZONE CORP.</p>
   </footer>
+</div>
+</div>
  </body>
 </html>
